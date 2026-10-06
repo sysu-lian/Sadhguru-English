@@ -15,14 +15,14 @@ images/
 
 ```
 images/01-100/
-├── 001-american.webp     ← 主档
-├── 001-american.jpg      ← 兜底
-├── 002-life.webp
-├── 002-life.jpg
+├── american.webp     ← 主档
+├── american.jpg      ← 兜底
+├── life.webp
+├── life.jpg
 └── …
 ```
 
-命名规则 `<序号补零3位>-<词形小写>.<ext>`，例如 `001-american.webp`、`702-effort.jpg`。
+命名规则 `<词形小写>.<ext>`，例如 `american.webp`、`effort.jpg`。
 排序即词频序，看 `data/words-1-3878.csv` 的 `seq` 对得上号。
 
 ## 规格
@@ -38,7 +38,7 @@ images/01-100/
 
 ## 用法
 
-- **本地站 / Anki 导入**：直接按 `images/<区间>/<序号>-<词>.webp` 引相对路径。
+- **本地站 / Anki 导入**：直接按 `images/<区间>/<词>.webp` 引相对路径。
 - **想挂 CDN 不想背 67 MB**：`data/manifest-images.csv` 里已经有线上地址，指过去即可。
 - **只想给一小段做 demo**：用 `data/words-1-900.csv` 里的 `image` 字段拿到路径，再去对应区间取。
 

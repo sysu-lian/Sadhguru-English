@@ -1,0 +1,16 @@
+# macOS
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# 本地产物：音频与 Anki 牌组不进仓库（体积大、可复现）
+# 它们默认生成在仓库外的 Sadhguru-English-build/
+build/
+release/
+*.apkg

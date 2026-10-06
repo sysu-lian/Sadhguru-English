@@ -1,0 +1,19 @@
+# 文本文件统一 LF，二进制标记为 binary
+* text=auto
+
+# CSV 例外：生成链路产出的是 CRLF（Excel / Windows 友好），
+# 若强制归一化成 LF，每次重新生成词表都会产生整文件 diff，纯噪音。
+*.csv   -text
+
+*.md    text eol=lf
+*.json  text eol=lf
+*.py    text eol=lf
+*.yml   text eol=lf
+*.toml  text eol=lf
+
+*.webp  binary
+*.jpg   binary
+*.jpeg  binary
+*.png   binary
+*.apkg  binary
+*.mp3   binary

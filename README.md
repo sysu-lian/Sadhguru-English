@@ -38,10 +38,19 @@
 | 1411–1699 场景与提示词 | `data/illustrations-1400-1699.json` |
 | 1700–2000 场景、提示词及可选圈选坐标 | `data/illustrations-1700-2000.json` |
 | 2000 张成品图 | `git clone` → `images/` |
+| 148 幅诗歌插画 | `images/poems/`，编号与 `data/poem-illustrations.csv` 对应 |
 
 ```bash
 git clone https://github.com/sysu-lian/Sadhguru-English.git
 ```
+
+---
+
+## 诗歌插画
+
+另收录 **148 幅独立的诗歌主题插画**，存于 [`images/poems/`](images/poems/)；每幅为 1024×1024 WebP，文件名 `001.webp`–`148.webp`。编号、英文标题、图片路径及出场人物见 [`data/poem-illustrations.csv`](data/poem-illustrations.csv)。这个系列与上面的 2000 张单词配图分开编号。
+
+插画使用 `image_gen` 绘制，沿用本仓库已有的老者形象，并按固定角色参考绘制山卡拉皮莱。这里只提供插画和索引，不收录诗歌正文。
 
 ---
 
